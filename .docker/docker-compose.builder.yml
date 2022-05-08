@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+  base:
+    image: node:14
+    volumes:
+      # this will allow node_modules within the container to live on it' own, isolated completely from local.
+      - nodemodules:/app/node_modules
+      - ../:/app
+    working_dir: /app
+
+  install:
+    extends:
+      service: base
+    command: bash -c "npm install -g pnpm && pnpm i"
+  build:
+    extends:
+      service: base
+    command: npm run build:dev
+
+volumes:
+  nodemodules:
+    external: true

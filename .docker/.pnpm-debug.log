@@ -1,0 +1,23 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "workspacePrefix": "/Users/dotennin-mac/projects/netSDL"
+  },
+  "1 error pnpm": {
+    "code": "ERR_PNPM_UNSUPPORTED_ENGINE",
+    "packageId": "/Users/dotennin-mac/projects/netSDL/projects/edm-bo",
+    "wanted": {
+      "node": "14.x~16.x"
+    },
+    "current": {
+      "node": "v16.14.2",
+      "pnpm": "6.32.7"
+    },
+    "err": {
+      "name": "pnpm",
+      "message": "Unsupported engine for /Users/dotennin-mac/projects/netSDL/projects/edm-bo: wanted: {\"node\":\"14.x~16.x\"} (current: {\"node\":\"v16.14.2\",\"pnpm\":\"6.32.7\"})",
+      "code": "ERR_PNPM_UNSUPPORTED_ENGINE",
+      "stack": "pnpm: Unsupported engine for /Users/dotennin-mac/projects/netSDL/projects/edm-bo: wanted: {\"node\":\"14.x~16.x\"} (current: {\"node\":\"v16.14.2\",\"pnpm\":\"6.32.7\"})\n    at checkEngine (/Users/dotennin-mac/Library/pnpm/nodejs/16.14.2/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.7/node_modules/pnpm/dist/pnpm.cjs:41292:16)\n    at checkPackage (/Users/dotennin-mac/Library/pnpm/nodejs/16.14.2/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.7/node_modules/pnpm/dist/pnpm.cjs:43388:104)\n    at packageIsInstallable (/Users/dotennin-mac/Library/pnpm/nodejs/16.14.2/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.7/node_modules/pnpm/dist/pnpm.cjs:43412:61)\n    at readProjectManifestOnly (/Users/dotennin-mac/Library/pnpm/nodejs/16.14.2/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.7/node_modules/pnpm/dist/pnpm.cjs:43736:55)\n    at async Object.handler (/Users/dotennin-mac/Library/pnpm/nodejs/16.14.2/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.7/node_modules/pnpm/dist/pnpm.cjs:177973:24)\n    at async /Users/dotennin-mac/Library/pnpm/nodejs/16.14.2/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.7/node_modules/pnpm/dist/pnpm.cjs:182249:21\n    at async run (/Users/dotennin-mac/Library/pnpm/nodejs/16.14.2/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.7/node_modules/pnpm/dist/pnpm.cjs:182223:34)\n    at async runPnpm (/Users/dotennin-mac/Library/pnpm/nodejs/16.14.2/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.7/node_modules/pnpm/dist/pnpm.cjs:182442:5)\n    at async /Users/dotennin-mac/Library/pnpm/nodejs/16.14.2/pnpm-global/5/node_modules/.pnpm/pnpm@6.32.7/node_modules/pnpm/dist/pnpm.cjs:182434:7"
+    }
+  }
+}

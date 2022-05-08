@@ -1,0 +1,20 @@
+version: '3'
+services:
+  web:
+    container_name: edm-bo
+    image: node:14
+    working_dir: /app
+    volumes:
+      # this will allow node_modules within the container to live on it' own, isolated completely from local.
+      - nodemodules:/app/node_modules
+      - ../:/app
+    environment:
+      - NODE_ENV:development
+    ports:
+      - 3000:3000
+    command: npx vite --host
+    network_mode: host
+
+volumes:
+  nodemodules:
+    external: true
